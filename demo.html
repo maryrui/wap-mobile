@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            font-size:35px;
+        }
+        .flex-box{
+            display:flex;
+            display: -webkit-flex;/*chorme*/
+            display: -ms-flex;/*ie*/
+            background-color:#2d2d2d;
+            margin-bottom: 10px;
+        }
+        .flex-content{
+            width:300px;
+            height:300px;
+            background-color:#c1c1c1;
+            margin:10px;
+            border:3px solid #c34343;
+        }
+        .flex-content2{
+            width:300px;
+            height:300px;
+            background-color:#c1c1c1;
+            border:3px solid #c34343;
+        }
+        .common-box{
+            background-color:#3d3d3d;
+        }
+    </style>
+</head>
+<body>
+<div class="flex-box">
+    <div class="flex-content">我是flex-content</div>
+    <div class="flex-content">我是flex-content</div>
+    <div class="flex-content">我是flex-content</div>
+</div>
+<div class="flex-box">
+    <div class="flex-content2">我是flex-content2</div>
+    <div class="flex-content2">我是flex-content2</div>
+    <div class="flex-content2">我是flex-content2</div>
+</div>
+<div class="common-box">
+    <div class="flex-content">我是common-content</div>
+    <div class="flex-content">我是common-content</div>
+    <div class="flex-content">我是common-content</div>
+</div>
+</body>
+</html>
