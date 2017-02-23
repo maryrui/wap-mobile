@@ -74,11 +74,10 @@ section .input_size input{
     height:3rem;
 }
 .accordion h2{
-    height:2rem;
     border:1px solid #ddd;
     justify-content:space-between;
-    line-height:2rem;
-    padding-left:.5rem;
+    line-height:4rem;
+    padding:1rem .5rem;
 }
 .accordion .chooseStyle{
     flex-wrap:wrap;
