@@ -2,7 +2,6 @@
 body, ul, dl, dd, dt, ol, li, p, h1, h2, h3, h4, h5, h6, textarea, form, select, fieldset, table, td, div, input {margin:0;padding:0;-webkit-text-size-adjust: none}
 h1, h2, h3, h4, h5, h6{font-size:12px;font-weight:normal}
 a img {border:0}
-body { color: #333; text-align: center; font: 12px "宋体"; margin:0;}
 ul, ol, li {list-style-type:none;vertical-align:0}
 a {outline-style:none;color:#535353;text-decoration:none}
 a:hover { color: #D40000; text-decoration: none}
@@ -12,6 +11,10 @@ a:hover { color: #D40000; text-decoration: none}
     display: -ms-flexbox;  /* 混合版本语法: IE 10 */
     display: -webkit-flex; /* 新版本语法: Chrome 21+ */
     display: flex;     /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+label{
+    vertical-align:top;
+    margin-left:.3rem;
 }
 .slider{display:none}/*用于获取更加体验*/
 .focus span{width:10px;height:10px;margin-right:10px;border-radius:50%;background:#666;font-size:0}
@@ -24,7 +27,7 @@ footer{
     bottom:0;
     display:flex;
     justify-content:space-around;
-    height:3rem;
+    height:5rem;
     background:#f8e01c;
     color:#f8e01c;
     padding:1rem 0;
@@ -69,4 +72,59 @@ section .input_size label{
 section .input_size input{
     width:10rem;
     height:3rem;
+}
+.accordion h2{
+    height:2rem;
+    border:1px solid #ddd;
+    justify-content:space-between;
+    line-height:2rem;
+    padding-left:.5rem;
+}
+.accordion .chooseStyle{
+    flex-wrap:wrap;
+    overflow-y:scroll;
+    height:5.6rem;
+}
+.accordion .chooseStyle li{
+    width:33%;
+    text-align:center;
+    margin:.5rem 0;
+}
+.other{
+    justify-content:space-around;
+    margin:.6rem;
+}
+.table ul{
+    margin:0 1rem;
+    border:1px solid #ddd;
+}
+.table ul li{
+    justify-content:space-between;
+    line-height:1.6rem;
+    margin-top:.5rem;
+    padding:0 1rem;
+}
+.table ul li select,.table ul li input{
+    width:5rem;
+    height:2rem;
+}
+.table ul li:first-child{
+    background:#c1c1c1
+}
+.section_footer{
+    padding:0 1.5rem;
+}
+.section_footer p:first-child{
+    font-size:1.4rem;
+    line-height:2.5rem;
+}
+.section_footer p:last-child{
+    justify-content:space-around;
+
+}
+.section_footer p:last-child button{
+    padding:.5rem 3rem;
+    background:linear-gradient(to bottom,#c1c1c1,#333333);
+    color:#ffffff;
+    border:0;
 }
