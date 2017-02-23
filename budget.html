@@ -212,11 +212,11 @@
         $("section h2").click(function(){
             if(accordionOpen){
                 $(this).addClass("on").children("i").html("&#xe6a5;");
-                $(this).next("div").fadeOut(500);
+                $(this).next("div").fadeOut(300);
                 accordionOpen=false;
             }else{
                 $(this).children("i").html("&#xe6a6;");
-                $(this).next("div").fadeIn(500);
+                $(this).next("div").fadeIn(300);
                 accordionOpen=true;
             }
 
