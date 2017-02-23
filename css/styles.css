@@ -2,11 +2,17 @@
 body, ul, dl, dd, dt, ol, li, p, h1, h2, h3, h4, h5, h6, textarea, form, select, fieldset, table, td, div, input {margin:0;padding:0;-webkit-text-size-adjust: none}
 h1, h2, h3, h4, h5, h6{font-size:12px;font-weight:normal}
 a img {border:0}
-body { color: #333; text-align: center; font: 12px "宋体"; }
+body { color: #333; text-align: center; font: 12px "宋体"; margin:0;}
 ul, ol, li {list-style-type:none;vertical-align:0}
 a {outline-style:none;color:#535353;text-decoration:none}
 a:hover { color: #D40000; text-decoration: none}
-
+.flexbox{
+    display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex;     /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
 .slider{display:none}/*用于获取更加体验*/
 .focus span{width:10px;height:10px;margin-right:10px;border-radius:50%;background:#666;font-size:0}
 .focus span.current{background:#fff}
@@ -18,9 +24,10 @@ footer{
     bottom:0;
     display:flex;
     justify-content:space-around;
-    height:2.5rem;
+    height:3rem;
     background:#f8e01c;
     color:#f8e01c;
+    padding:1rem 0;
 }
 footer button{
     border:0;
@@ -29,7 +36,37 @@ footer button{
     padding:0.5rem 1.5rem;
     margin:0.2rem 0;
 }
-
-body{
-    margin:0;
+section .modify{
+    display:flex;
+    display:-webkit-flex;
+    justify-content:space-between;
+    font-size:1rem;
+    padding:.5rem;
+}
+section .modify p span:first-child{
+    margin-right:1rem;
+}
+section .modify p i{
+    color:#fadf1e;
+    opacity:.8;
+}
+section .modify p i:first-child{
+    margin-right:1rem;
+}
+section p.price{
+    color:#f00;
+    font-size:1.5rem;
+    margin-left:.5rem;
+}
+section .input_size{
+    justify-content:space-around;
+    margin-top:1rem;
+}
+section .input_size label{
+    font-size:1.5rem;
+    color:#000000;
+}
+section .input_size input{
+    width:10rem;
+    height:3rem;
 }
