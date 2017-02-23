@@ -21,7 +21,7 @@
     </div>
     <div class="accordion">
         <h2 class="flexbox">款式选择 <i class="iconfont">&#xe6a6;</i></h2>
-        <div>
+        <div style="display:none;">
             <ul class="flexbox chooseStyle">
                 <li><input type="radio" id="curtain_head_01" name="curtain_head"/><label for="curtain_head_01">水波帘眉款</label></li>
                 <li><input type="radio" id="curtain_head_02" name="curtain_head"/><label for="curtain_head_02">褶皱帘眉款</label></li>
@@ -33,7 +33,7 @@
             </ul>
         </div>
         <h2 class="flexbox">其它要求 <i class="iconfont">&#xe6a6;</i></h2>
-        <div style="display:none;">
+        <div style="display:none;" class="otherbox">
             <ul class="flexbox other">
                 <li><input type="checkbox" id="other_01" name="other"/><label for="other_01">布帘</label></li>
                 <li><input type="checkbox" id="other_02" name="other"/><label for="other_02">纱帘</label></li>
@@ -208,19 +208,10 @@
 <script>
     $(".slider").yxMobileSlider({width:640,height:640,during:3000});
     $(function(){
-        var accordionOpen=true;
-        $("section h2").click(function(){
-            if(accordionOpen){
-                $(this).addClass("on").children("i").html("&#xe6a5;");
-                $(this).next("div").fadeOut(300);
-                accordionOpen=false;
-            }else{
-                $(this).children("i").html("&#xe6a6;");
-                $(this).next("div").fadeIn(300);
-                accordionOpen=true;
-            }
-
-        })
+       $("section h2").click(function(){
+           $(this).children("i").html("&#xe6a5;").parent().next("div").slideToggle(300).siblings("div").slideUp("slow");
+           $(this).siblings().children("i").html("&#xe6a6;");
+       })
     })
 
 </script>
