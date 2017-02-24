@@ -10,14 +10,21 @@
 </head>
 <body>
 <section>
-    <div class="slider">
-        <ul>
-            <li><a href="#" target="_blank"><img src="images/zhu1-800.png"></a></li>
-            <li><a href="#" target="_blank"><img src="images/zhu2-800.png"></a></li>
-            <li><a href="#" target="_blank"><img src="images/zhu3-800.png"></a></li>
-            <li><a href="#" target="_blank"><img src="images/zhu4-800.png"></a></li>
-            <li><a href="#" target="_blank"><img src="images/zhu5-800.png"></a></li>
-        </ul>
+    <div class="swiper-container">
+        <div class="swiper-wrapper flexbox">
+            <div class="swiper-slide"><a href="#"><img src="images/zhu1-800.png" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/zhu2-800.png" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/zhu3-800.png" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/zhu4-800.png" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/zhu5-800.png" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/zhu6-800.png" alt=""/></a></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="flexbox input_size">
+        <p><label>帘宽：</label><input type="number"/></p>
+        <p><label>帘高：</label><input type="number"/></p>
     </div>
     <div class="accordion">
         <h2 class="flexbox">款式选择 <i class="iconfont">&#xe6a6;</i></h2>
@@ -29,7 +36,6 @@
                 <li><input type="radio" id="curtain_head_04" name="curtain_head"/><label for="curtain_head_04">平布帘眉款</label></li>
                 <li><input type="radio" id="curtain_head_05" name="curtain_head"/><label for="curtain_head_05">轨道基本款</label></li>
                 <li><input type="radio" id="curtain_head_06" name="curtain_head"/><label for="curtain_head_06">窗杆基本款</label></li>
-                <li><input type="radio" id="curtain_head_07" name="curtain_head"/><label for="curtain_head_07">窗杆基本款</label></li>
             </ul>
         </div>
         <h2 class="flexbox">其它要求 <i class="iconfont">&#xe6a6;</i></h2>
@@ -40,12 +46,12 @@
                 <li><input type="checkbox" id="other_03" name="other"/><label for="other_03">遮光布</label></li>
             </ul>
         </div>
-        <h2 class="flexbox">窗帘明细&nbsp;￥0.00 <i class="iconfont">&#xe6a6;</i></h2>
+        <h2 class="flexbox">帘眉明细&nbsp;￥0.00 <i class="iconfont">&#xe6a6;</i></h2>
         <div class="table" style="display:none;">
             <ul>
                 <li class="flexbox">
                     <span>材料</span>
-                    <span>规格</span>
+                    <span class="two">规格</span>
                     <span>数量</span>
                     <span>单位(元)</span>
                     <span>金额(元)</span>
@@ -53,7 +59,8 @@
                 <li class="flexbox">
                     <span>纱布</span>
                     <select>
-                        <option value="1">280cm</option>
+                        <option value="1">2800mm</option>
+                        <option value="1">1450mm</option>
                     </select>
                     <span>0.00</span>
                     <input type="number"/>
@@ -61,27 +68,21 @@
                 </li>
                 <li class="flexbox">
                     <span>工艺</span>
-                    <select>
-                        <option value="1">280cm</option>
-                    </select>
+                    <span class="two"></span>
                     <span>0.00</span>
                     <input type="number"/>
                     <span>0.00</span>
                 </li>
                 <li class="flexbox">
                     <span>花边</span>
-                    <select>
-                        <option value="1">280cm</option>
-                    </select>
+                    <span class="two"></span>
                     <span>0.00</span>
                     <input type="number"/>
                     <span>0.00</span>
                 </li>
                 <li class="flexbox">
                     <span>轨道</span>
-                    <select>
-                        <option value="1">280cm</option>
-                    </select>
+                    <span class="two"></span>
                     <span>0.00</span>
                     <input type="number"/>
                     <span>0.00</span>
@@ -99,9 +100,10 @@
                     <span>金额(元)</span>
                 </li>
                 <li class="flexbox">
-                    <span>纱布</span>
+                    <span>布料</span>
                     <select>
-                        <option value="1">280cm</option>
+                        <option value="1">2800mm</option>
+                        <option value="1">1450mm</option>
                     </select>
                     <span>0.00</span>
                     <input type="number"/>
@@ -109,27 +111,21 @@
                 </li>
                 <li class="flexbox">
                     <span>工艺</span>
-                    <select>
-                        <option value="1">280cm</option>
-                    </select>
+                    <span class="two"></span>
                     <span>0.00</span>
                     <input type="number"/>
                     <span>0.00</span>
                 </li>
                 <li class="flexbox">
                     <span>花边</span>
-                    <select>
-                        <option value="1">280cm</option>
-                    </select>
+                    <span class="two"></span>
                     <span>0.00</span>
                     <input type="number"/>
                     <span>0.00</span>
                 </li>
                 <li class="flexbox">
                     <span>轨道</span>
-                    <select>
-                        <option value="1">280cm</option>
-                    </select>
+                    <span class="two"></span>
                     <span>0.00</span>
                     <input type="number"/>
                     <span>0.00</span>
@@ -149,7 +145,8 @@
                 <li class="flexbox">
                     <span>纱布</span>
                     <select>
-                        <option value="1">280cm</option>
+                        <option value="1">2800mm</option>
+                        <option value="1">1450mm</option>
                     </select>
                     <span>0.00</span>
                     <input type="number"/>
@@ -157,27 +154,21 @@
                 </li>
                 <li class="flexbox">
                     <span>工艺</span>
-                    <select>
-                        <option value="1">280cm</option>
-                    </select>
+                    <span class="two"></span>
                     <span>0.00</span>
                     <input type="number"/>
                     <span>0.00</span>
                 </li>
                 <li class="flexbox">
                     <span>花边</span>
-                    <select>
-                        <option value="1">280cm</option>
-                    </select>
+                    <span class="two"></span>
                     <span>0.00</span>
                     <input type="number"/>
                     <span>0.00</span>
                 </li>
                 <li class="flexbox">
                     <span>轨道</span>
-                    <select>
-                        <option value="1">280cm</option>
-                    </select>
+                    <span class="two"></span>
                     <span>0.00</span>
                     <input type="number"/>
                     <span>0.00</span>
@@ -204,15 +195,17 @@
 </footer>-->
 </body>
 <script src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/yxMobileSlider.js"></script>
+<script src="js/swiper.min.js"></script>
 <script>
-    $(".slider").yxMobileSlider({width:640,height:640,during:3000});
     $(function(){
        $("section h2").click(function(){
            $(this).children("i").html("&#xe6a5;").parent().next("div").slideToggle(300).siblings("div").slideUp("slow");
            $(this).siblings().children("i").html("&#xe6a6;");
        })
     })
-
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
 </script>
 </html>

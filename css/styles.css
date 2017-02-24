@@ -16,7 +16,7 @@ label{
     vertical-align:top;
     margin-left:.3rem;
 }
-.slider{display:none}/*用于获取更加体验*/
+
 .focus span{width:10px;height:10px;margin-right:10px;border-radius:50%;background:#666;font-size:0}
 .focus span.current{background:#fff}
 footer,header,section{
@@ -63,15 +63,14 @@ section p.price{
 }
 section .input_size{
     justify-content:space-around;
-    margin-top:1rem;
+    margin:1rem 0;
 }
 section .input_size label{
-    font-size:1.5rem;
-    color:#000000;
+    vertical-align: middle;
 }
 section .input_size input{
-    width:10rem;
-    height:3rem;
+    width:5rem;
+    height:2rem;
 }
 .accordion h2{
     border:1px solid #ddd;
@@ -100,16 +99,21 @@ section .input_size input{
 }
 .table ul li{
     justify-content:space-between;
+    align-items:center;
     line-height:1.6rem;
     margin-top:.5rem;
     padding:0 1rem;
 }
 .table ul li select,.table ul li input{
-    width:5rem;
+    width:6.5rem;
     height:2rem;
 }
 .table ul li:first-child{
     background:#c1c1c1
+}
+.table ul li span.two{
+    width:6.5rem;
+    text-align:center;
 }
 .section_footer{
     padding:0 1.5rem;
@@ -129,4 +133,7 @@ section .input_size input{
     background:linear-gradient(to bottom,#c1c1c1,#333333);
     color:#ffffff;
     border:0;
+}
+.swiper-container{
+
 }
