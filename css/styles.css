@@ -76,8 +76,8 @@ section .input_size input{
 .accordion h2{
     border:1px solid #ddd;
     justify-content:space-between;
-    line-height:4rem;
-    padding:1rem .5rem;
+    line-height:2rem;
+    padding:.5rem;
 }
 .accordion .chooseStyle{
     flex-wrap:wrap;
@@ -92,6 +92,7 @@ section .input_size input{
 .other{
     justify-content:space-around;
     margin:.6rem;
+    padding:2rem 0;
 }
 .table ul{
     margin:0 1rem;
@@ -112,10 +113,12 @@ section .input_size input{
 }
 .section_footer{
     padding:0 1.5rem;
+    margin-top:3rem;
 }
 .section_footer p:first-child{
     font-size:1.4rem;
     line-height:2.5rem;
+    margin-bottom:1rem;
 }
 .section_footer p:last-child{
     justify-content:space-around;
