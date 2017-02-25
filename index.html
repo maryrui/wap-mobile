@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0;"/>
+    <link rel="stylesheet" href="css/bass.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+</head>
+<body>
+    <div class="layout">
+        <header class="top">
+            <div class="search">
+                <input type="search" placeholder="省-市-花园"/>
+                <i class="iconfont">&#xe6ac;</i>
+            </div>
+            <div>
+                <i class="iconfont">&#xe649;</i>
+                <p>消息</p>
+            </div>
+        </header>
+        <div class="swiper-container">
+            <div class="swiper-wrapper flexbox">
+                <div class="swiper-slide"><a href="#"><img src="images/banner1.png" alt=""/></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner2.png" alt=""/></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner3.png" alt=""/></a></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <nav>
+            <ul class="flexbox">
+                <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe62b;</i>
+                        <p>预算</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe601;</i>
+                        <p>搜帘宝</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe615;</i>
+                        <p>优惠速递</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe6af;</i>
+                        <p>晒单</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <ul class="flexbox product">
+                <li>
+                    <a href="#">
+                        <img src="images/zhu1-800.png" alt=""/>
+                        <p class="flexbox"><span>彩虹</span><span>简约</span></p>
+                        <h4>2750mm*2700mm</h4>
+                        <span>￥680.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/zhu2-800.png" alt=""/>
+                        <p class="flexbox"><span>彩虹</span><span>简约</span></p>
+                        <h4>2750mm*2700mm</h4>
+                        <span>￥680.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/zhu3-800.png" alt=""/>
+                        <p class="flexbox"><span>彩虹</span><span>简约</span></p>
+                        <h4>2750mm*2700mm</h4>
+                        <span>￥680.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/zhu4-800.png" alt=""/>
+                        <p class="flexbox"><span>彩虹</span><span>简约</span></p>
+                        <h4>2750mm*2700mm</h4>
+                        <span>￥680.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/zhu5-800.png" alt=""/>
+                        <p class="flexbox"><span>彩虹</span><span>简约</span></p>
+                        <h4>2750mm*2700mm</h4>
+                        <span>￥680.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/zhu6-800.png" alt=""/>
+                        <p class="flexbox"><span>彩虹</span><span>简约</span></p>
+                        <h4>2750mm*2700mm</h4>
+                        <span>￥680.00</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <footer>
+            <ul class="flexbox">
+                <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe602;</i>
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe614;</i>
+                        <p>分类</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe612;</i>
+                        <p>方案</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe698;</i>
+                        <p>购物车</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe64f;</i>
+                        <p>我的</p>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true
+
+      /*  // 如果需要前进后退按钮
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+
+        // 如果需要滚动条
+        scrollbar: '.swiper-scrollbar',*/
+    })
+</script>
+</html>
