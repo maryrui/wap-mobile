@@ -136,6 +136,7 @@ section{
     padding:.2rem;
     border-radius:4px;
     border:1px solid #ff999a;
+    margin-bottom:.5rem;
 }
 .product li a{
     color:#333;
