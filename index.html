@@ -13,7 +13,7 @@
     <div class="layout">
         <header class="top">
             <div class="search">
-                <input type="search" placeholder="省-市-花园"/>
+                <input type="search" placeholder="请选择-省-市-商圈-花园"/>
                 <i class="iconfont">&#xe6ac;</i>
             </div>
             <div>
@@ -151,8 +151,15 @@
 <script>
 
         var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            paginationClickable: true
+
+            pagination: '.swiper-pagination',/*
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',*/
+            paginationClickable: true,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: 2500,
+            autoplayDisableOnInteraction: false
 
       /*  // 如果需要前进后退按钮
         nextButton: '.swiper-button-next',
